@@ -1,0 +1,15 @@
+{
+  "name": "dr_nowak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "damcyk96",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.0"
+  },
+  "scripts": {
+    "sass:compile": "node-sass assets/scss/main.scss assets/css/style.css -w"
+  }
+}
