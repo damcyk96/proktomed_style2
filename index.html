@@ -28,48 +28,49 @@
   </div>
 
   <header class="header" data-header>
-    <div class="container">
+    <div class="container header__container">
       <a href="#" class="logo">
         <img src="./assets/images/logo.webp" width="136" height="46" alt="Proktomed" style="background: white;" />
       </a>
 
       <nav class="navbar" data-navbar>
-        <div class="navbar-top">
+        <div class="navbar__top">
           <a href="#" class="logo">
             <img src="./assets/images/logo.webp" width="136" height="46" alt="Proktomed" />
           </a>
 
-          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+          <button class="navbar__close-btn" aria-label="clsoe menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
 
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Główna</a>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link title-md">Główna</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Schorzenia</a>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link title-md">Schorzenia</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Dla pacjentów</a>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link title-md">Dla pacjentów</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Hemoron DGHAL</a>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link title-md">Hemoron DGHAL</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Zalecenia po wizycie</a>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link title-md">Zalecenia po wizycie</a>
           </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Kontakt</a>
+
+          <li class="navbar__item">
+            <a href="#" class="navbar__link title-md">Kontakt</a>
           </li>
         </ul>
 
-        <ul class="social-list">
+        <ul class="navbar__social-list">
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
@@ -82,402 +83,384 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-pinterest"></ion-icon>
-            </a>
-          </li>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
         </ul>
       </nav>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+      <button class="navbar__open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
 
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
+      <div class="navbar__overlay" data-nav-toggler data-overlay></div>
     </div>
   </header>
 
   <main>
-    <article>
-      <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="headline-lg hero-title" data-reveal="left">
-              specjalista chirurg<br />
-              dr n. med. Marcin Nowak
-            </h1>
-          </div>
-
-          <figure class="hero-banner" data-reveal="right">
-            <img src="./assets/images/drnowak.png" width="590" height="517" loading="eager" alt="hero banner"
-              class="w-100" />
-          </figure>
+    <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="headline-lg hero__title" data-reveal="left">
+            specjalista chirurg<br />
+            dr n. med. Marcin Nowak
+          </h1>
         </div>
-      </section>
 
-      <section class="service" aria-label="service">
-        <div class="container">
-          <ul class="service-list">
-            <li>
-              <div class="service-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
+        <figure class="hero-banner" data-reveal="right">
+          <img src="./assets/images/drnowak.png" width="590" height="517" loading="eager" alt="hero banner"
+            class="w-100" />
+        </figure>
+      </div>
+    </section>
 
-                <h3 class="headline-sm card-title">
-                  <a href="#">Kolonoskopia</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                </p>
-
-                <button class="btn-circle" aria-label="read more about psychiatry">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
+    <section class="service" aria-label="service">
+      <div class="container">
+        <ul class="service-list">
+          <li>
+            <div class="service-list__card" data-reveal="bottom">
+              <div class="service-list__card-icon">
+                <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Kolonoskopia</a>
+              </h3>
+
+              <p class="service-list__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p>
+
+              <button class="service-list__card-btn" aria-label="read more about sth">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-list__card" data-reveal="bottom">
+              <div class="service-list__card-icon">
+                <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Anoskopia</a>
+              </h3>
+
+              <p class="service-list__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p>
+
+              <button class="service-list__card-btn" aria-label="read more about sth">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-list__card" data-reveal="bottom">
+              <div class="service-list__card-icon">
+                <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Lorem ipsum</a>
+              </h3>
+
+              <p class="service-list__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p>
+
+              <button class="service-list__card-btn" aria-label="read more about sth">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-list__card" data-reveal="bottom">
+              <div class="service-list__card-icon">
+                <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Leczenie operacyjne</a>
+              </h3>
+
+              <p class="service-list__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p>
+
+              <button class="service-list__card-btn" aria-label="read more about sth">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-label">
+      <div class="about__container container">
+        <div class="about__content">
+          <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">
+            O mnie
+          </p>
+
+          <h2 class="headline-md" data-reveal="left">
+            Doswiadczenie zawodowe
+          </h2>
+
+          <p class="about__section-text" data-reveal="left">
+            Setki wyleczonych pacjentów, doswiadczenie zawodowe, ktore pozwala na wykonanie nawet najtrudniejszych
+            zabiegow.
+          </p>
+
+          <ul class="about__tab-buttons-list" data-reveal="left">
+            <li>
+              <button class="about__tab-btn about__tab-btn-active">Lorem</button>
             </li>
 
             <li>
-              <div class="service-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <h3 class="headline-sm card-title">
-                  <a href="#">Anoskopia</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                </p>
-
-                <button class="btn-circle" aria-label="read more about Gynecology">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
-              </div>
+              <button class="about__tab-btn">Ipsum</button>
             </li>
 
             <li>
-              <div class="service-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <h3 class="headline-sm card-title">
-                  <a href="#">Lorem ipsum</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                </p>
-
-                <button class="btn-circle" aria-label="read more about Pulmonology">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <h3 class="headline-sm card-title">
-                  <a href="#">Leczenie operacyjne</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                </p>
-
-                <button class="btn-circle" aria-label="read more about Orthopedics">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
-              </div>
+              <button class="about__tab-btn">dr Nowak</button>
             </li>
           </ul>
-        </div>
-      </section>
 
-      <section class="about" aria-labelledby="about-label">
-        <div class="container">
-          <div class="about-content">
-            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">
-              O mnie
+          <p class="tab-text" data-reveal="left">
+            Aliquam faucibus, odio nec commodo aliquam, neque felis placerat
+            dui, a porta ante lectus dapibus est. Aliquam a bibendum mi, sed
+            condimentum
+          </p>
+
+          <div class="wrapper">
+            <ul class="about__tab-list">
+              <li class="about__item" data-reveal="left">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                <span class="span">Sonsectetur adipisicing elit</span>
+              </li>
+
+              <li class="about__item" data-reveal="left">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                <span class="span">Exercitation ullamco laboris</span>
+              </li>
+
+              <li class="about__item" data-reveal="left">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                <span class="span">Eiusmod tempor incididunt</span>
+              </li>
+
+              <li class="about__item" data-reveal="left">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                <span class="span">Aolore magna aliqua</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="about-banner" data-reveal="right">
+          <div class="about__ring-container">
+            <div class="about__ring-container__ringring"></div>
+            <div class="about__ring-container__red-dot"></div>
+          </div>
+          <img src="./assets/images/hemoroids.png" width="554" height="678" loading="lazy" alt="about banner"
+            class="w-100" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section listing" aria-labelledby="listing-label">
+      <div class="container">
+        <ul class="grid-list">
+          <li>
+            <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">
+              Schorzenia
             </p>
 
             <h2 class="headline-md" data-reveal="left">
-              Doswiadczenie zawodowe
+              Przed przyjściem
             </h2>
+          </li>
 
-            <p class="section-text" data-reveal="left">
-              Setki wyleczonych pacjentów, doswiadczenie zawodowe, ktore pozwala na wykonanie nawet najtrudniejszych
-              zabiegow.
-            </p>
+          <li>
+            <div class="listing__card" data-reveal="bottom">
+              <div class="card-icon">
+                <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
 
-            <ul class="tab-list" data-reveal="left">
-              <li>
-                <button class="tab-btn active">Lorem</button>
-              </li>
+              <div>
+                <h3 class="headline-sm card-title">Kolonoskopia</h3>
 
-              <li>
-                <button class="tab-btn">Ipsum</button>
-              </li>
-
-              <li>
-                <button class="tab-btn">dr Nowak</button>
-              </li>
-            </ul>
-
-            <p class="tab-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat
-              dui, a porta ante lectus dapibus est. Aliquam a bibendum mi, sed
-              condimentum
-            </p>
-
-            <div class="wrapper">
-              <ul class="about-list">
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Sonsectetur adipisicing elit</span>
-                </li>
-
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Exercitation ullamco laboris</span>
-                </li>
-
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Eiusmod tempor incididunt</span>
-                </li>
-
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Aolore magna aliqua</span>
-                </li>
-              </ul>
+                <p class="card-text">Lorem ipsum</p>
+              </div>
             </div>
-          </div>
+          </li>
 
-          <figure class="about-banner" data-reveal="right">
-            <div class="ring-container">
-              <div class="ringring"></div>
-              <div class="red-dot"></div>
+          <li>
+            <div class="listing__card" data-reveal="bottom">
+              <div class="card-icon">
+                <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <div>
+                <h3 class="headline-sm card-title">Anoskopia</h3>
+
+                <p class="card-text">Lorem ipsum</p>
+              </div>
             </div>
-            <img src="./assets/images/hemoroids.png" width="554" height="678" loading="lazy" alt="about banner"
-              class="w-100" />
-          </figure>
-        </div>
-      </section>
+          </li>
 
-      <section class="section listing" aria-labelledby="listing-label">
-        <div class="container">
-          <ul class="grid-list">
-            <li>
-              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">
-                Schorzenia
+          <li>
+            <div class="listing__card" data-reveal="bottom">
+              <div class="card-icon">
+                <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <div>
+                <h3 class="headline-sm card-title">Hemoroidy</h3>
+
+                <p class="card-text">Test testowy</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="listing__card" data-reveal="bottom">
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <div>
+                <h3 class="headline-sm card-title">Anoskopia</h3>
+
+                <p class="card-text">Loreme telerem</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="listing__card" data-reveal="bottom">
+              <div class="card-icon">
+                <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <div>
+                <h3 class="headline-sm card-title">Gastroskopia</h3>
+
+                <p class="card-text">Possat weasgaw</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="listing__card" data-reveal="bottom">
+              <div class="card-icon">
+                <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon" />
+              </div>
+
+              <div>
+                <h3 class="headline-sm card-title">Wizyty domowe</h3>
+
+                <p class="card-text">Lorem ipsum</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section blog" aria-labelledby="blog-label">
+      <div class="container">
+
+
+        <h2 class="blog__section-title headline-md text-center" data-reveal="bottom">
+          Ostatnie wpisy na blogu
+        </h2>
+
+        <ul class="grid-list">
+          <li>
+            <div class="blog__card has-before has-after" data-reveal="bottom">
+
+
+              <h3 class="headline-sm card-title">
+                Schorzenia hemoroidalne - jak je leczyć?
+              </h3>
+
+              <time class="title-sm blog__card-date" datetime="2022-12-20">20 Grudzień, 2022</time>
+
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat
               </p>
 
-              <h2 class="headline-md" data-reveal="left">
-                Przed przyjściem
-              </h2>
-            </li>
+              <a href="#" class="blog__card-btn-text title-lg">Read More</a>
+            </div>
+          </li>
 
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Kolonoskopia</h3>
-
-                  <p class="card-text">Lorem ipsum</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Anoskopia</h3>
-
-                  <p class="card-text">Lorem ipsum</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Hemoroidy</h3>
-
-                  <p class="card-text">Test testowy</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Anoskopia</h3>
-
-                  <p class="card-text">Loreme telerem</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Gastroskopia</h3>
-
-                  <p class="card-text">Possat weasgaw</p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-                <div class="card-icon">
-                  <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon" />
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Wizyty domowe</h3>
-
-                  <p class="card-text">Lorem ipsum</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section blog" aria-labelledby="blog-label">
-        <div class="container">
+          <li>
+            <div class="blog__card has-before has-after" data-reveal="bottom">
 
 
-          <h2 class="section-title headline-md text-center" data-reveal="bottom">
-            Ostatnie wpisy na blogu
-          </h2>
+              <h3 class="headline-sm card-title">
+                Zasady prawidłowego odżywiania
+              </h3>
 
-          <ul class="grid-list">
-            <li>
-              <div class="blog-card has-before has-after" data-reveal="bottom">
+              <time class="title-sm blog__card-date" datetime="2022-01-28">28 January, 2022</time>
 
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat
+              </p>
 
-                <h3 class="headline-sm card-title">
-                  Schorzenia hemoroidalne - jak je leczyć?
-                </h3>
+              <a href="#" class="blog__card-btn-text title-lg">Read More</a>
+            </div>
+          </li>
 
-                <time class="title-sm date" datetime="2022-12-20">20 Grudzień, 2022</time>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat
-                </p>
-
-                <a href="#" class="btn-text title-lg">Read More</a>
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card has-before has-after" data-reveal="bottom">
+          <li>
+            <div class="blog__card has-before has-after" data-reveal="bottom">
 
 
-                <h3 class="headline-sm card-title">
-                  Zasady prawidłowego odżywiania
-                </h3>
+              <h3 class="headline-sm card-title">
+                Jakie są przyczyny chorób hemoroidalnych?
 
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+              </h3>
 
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat
-                </p>
+              <time class="title-sm blog__card-date" datetime="2022-12-20">20 Grudzień, 2022</time>
 
-                <a href="#" class="btn-text title-lg">Read More</a>
-              </div>
-            </li>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat
+              </p>
 
-            <li>
-              <div class="blog-card has-before has-after" data-reveal="bottom">
-
-
-                <h3 class="headline-sm card-title">
-                  Jakie są przyczyny chorób hemoroidalnych?
-
-                </h3>
-
-                <time class="title-sm date" datetime="2022-12-20">20 Grudzień, 2022</time>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat
-                </p>
-
-                <a href="#" class="btn-text title-lg">Read More</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </article>
+              <a href="#" class="blog__card-btn-text title-lg">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
     <div class="container">
-      <div class="section footer-top">
-        <div class="footer-brand" data-reveal="bottom">
+      <div class="section footer__top">
+        <div class="footer__top-brand" data-reveal="bottom">
           <a href="#" class="logo">
             <img src="./assets/images/logo.webp" width="136" height="46" loading="lazy" alt="Proktomed home" />
           </a>
 
-          <ul class="contact-list has-after">
-            <li class="contact-item">
-              <div class="item-icon">
+          <ul class="footer__contact-list has-after">
+            <li class="footer__contact-item">
+              <div class="footer__contact-item-icon">
                 <ion-icon name="mail-open-outline"></ion-icon>
               </div>
 
@@ -494,8 +477,8 @@
               </div>
             </li>
 
-            <li class="contact-item">
-              <div class="item-icon">
+            <li class="footer__contact-item">
+              <div class="footer__contact-item-icon">
                 <ion-icon name="call-outline"></ion-icon>
               </div>
 
@@ -514,8 +497,8 @@
           </ul>
         </div>
 
-        <div class="footer-list" data-reveal="bottom">
-          <p class="headline-sm footer-list-title">About Us</p>
+        <div class="footer__list" data-reveal="bottom">
+          <p class="headline-sm footer__list-title">About Us</p>
 
           <p class="text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -531,44 +514,50 @@
           </address>
         </div>
 
-        <ul class="footer-list" data-reveal="bottom">
+        <ul class="footer__list" data-reveal="bottom">
           <li>
-            <p class="headline-sm footer-list-title">Schorzenia</p>
+            <p class="headline-sm footer__list-title">Schorzenia</p>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Lorem ipsum</a>
+            <a href="#" class="text footer__link">Lorem ipsum</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Lorem ipsum</a>
+            <a href="#" class="text footer__link">Lorem ipsum</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Lorem ipsum</a>
+            <a href="#" class="text footer__link">Lorem ipsum</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Lorem ipsum</a>
+            <a href="#" class="text footer__link">Lorem ipsum</a>
           </li>
 
 
         </ul>
 
-        <ul class="footer-list" data-reveal="bottom">
+        <ul class="footer__list" data-reveal="bottom">
           <li>
-            <p class="headline-sm footer-list-title">Przydatne linki</p>
+            <p class="headline-sm footer__list-title">Przydatne linki</p>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Kontakt</a>
+            <a href="#" class="text footer__link">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" class="text footer__link">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" class="text footer__link">Kontakt</a>
           </li>
 
 
         </ul>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer__bottom">
         <p class="text copyright">
           &copy; Proktomed 2022
         </p>
