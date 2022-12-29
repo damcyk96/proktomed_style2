@@ -1,5 +1,5 @@
 .prealoader {
-  background-color: var(--color-primary-200);
+  background-color: var(--blue-300);
   display: grid;
   height: 100vh;
   left: 0;
@@ -16,22 +16,12 @@
   }
 
   .circle {
-    -webkit-animation: rotate360 1s ease infinite;
     animation: rotate360 1s ease infinite;
     border-block-start-color: transparent;
     border-radius: var(--radius-circle);
     border: 4px solid var(--white);
     height: 48px;
     width: 48px;
-  }
-
-  @-webkit-keyframes rotate360 {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
   }
 
   @keyframes rotate360 {

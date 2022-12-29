@@ -4,7 +4,6 @@
   box-shadow: var(--shadow-1);
   display: grid;
   gap: var(--spacing-4);
-  -webkit-margin-before: calc(var(--spacing--7) * -1);
   margin-block-start: calc(var(--spacing--7) * -1);
   padding-block: var(--spacing-8) var(--spacing-4);
   padding-inline: var(--spacing-3);
@@ -12,16 +11,17 @@
   &__card {
     text-align: center;
 
+    &-title {
+      @include headline-sm;
+    }
+
     &-icon,
     &-btn {
       margin-inline: auto;
-      max-width: -webkit-max-content;
-      max-width: -moz-max-content;
       max-width: max-content;
     }
 
     &-icon {
-      -webkit-margin-after: var(--spacing-3);
       margin-block-end: var(--spacing-3);
     }
 
@@ -32,23 +32,23 @@
     &-btn {
       border-radius: var(--radius-circle);
       box-shadow: var(--shadow-2);
-      color: var(--color-primary-200);
+      color: var(--blue-300);
       font-size: 2rem;
       padding: var(--spacing-2);
       transition: var(--transition-1);
 
       &:is(:hover, :focus-visible) {
-        background-color: var(--color-primary-200);
+        background-color: var(--blue-300);
         color: var(--white);
       }
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $breakpoint-lg) {
     grid-template-columns: repeat(4, 1fr);
   }
 }

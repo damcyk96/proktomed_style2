@@ -1,22 +1,26 @@
 .listing {
+  @include section;
   background-color: var(--color-neutral-200);
+
+  &__title {
+    @include headline-md;
+  }
 
   &__card {
     border-radius: var(--radius-12);
-    border: 2px solid var(--color-primary-300);
+    border: 2px solid var(--green-500);
     display: flex;
     gap: var(--spacing-3);
     padding: var(--spacing-3) var(--spacing-2);
     transition: var(--transition-1);
 
     &:is(:hover, :focus-visible) {
-      border-color: var(--color-primary-200);
+      border-color: var(--blue-300);
     }
 
     &-title {
-      font-family: var(--ff-oswald);
-      -webkit-margin-after: var(--spacing-1);
       margin-block-end: var(--spacing-1);
+      @include headline-sm;
     }
 
     &-text {
@@ -25,7 +29,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .listing .grid-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -35,7 +39,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakpoint-xl) {
   .listing .grid-list {
     grid-template-columns: repeat(4, 1fr);
   }

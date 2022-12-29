@@ -1,9 +1,10 @@
 .footer {
-  background-color: var(--color-primary-600);
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @include section;
+
+  background: url("/assets/images/footer-bg.png") var(--blue-500) no-repeat top
+    right/contain;
   color: var(--white);
+  padding-bottom: var(--section-2);
 
   &__bottom {
     display: flex;
@@ -14,25 +15,37 @@
   &__top {
     display: grid;
     gap: 2.5rem;
-    -webkit-padding-after: 4rem;
     padding-block-end: 4rem;
 
     &-brand {
-      background-color: var(--color-primary-200);
+      background-color: var(--blue-300);
       border-radius: var(--radius-6);
       padding: var(--spacing-4);
 
       .logo {
-        -webkit-margin-after: var(--spacing-3);
         margin-block-end: var(--spacing-3);
+
+        & img {
+          background-color: var(--white);
+        }
       }
     }
   }
+
+  &__contact-list {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
   &__contact-item {
     align-items: flex-start;
     display: flex;
     gap: var(--spacing-2);
-    -webkit-margin-before: var(--spacing-2);
     margin-block-start: var(--spacing-2);
 
     &-icon {
@@ -45,14 +58,14 @@
     transition: var(--transition-1);
 
     &:is(:hover, :focus-visible) {
-      color: var(--color-primary-200);
+      color: var(--blue-300);
     }
   }
 
   &__list-title {
+    @include headline-sm;
     color: var(--white);
     font-weight: var(--fw-700);
-    -webkit-margin-after: var(--spacing-3);
     margin-block-end: var(--spacing-3);
   }
 
@@ -64,7 +77,6 @@
     align-items: center;
     display: flex;
     gap: var(--spacing-2);
-    -webkit-margin-before: var(--spacing-3);
     margin-block-start: var(--spacing-3);
     ion-icon {
       font-size: 64px;
@@ -73,16 +85,15 @@
   }
 
   &__link {
-    -webkit-margin-before: var(--spacing-1);
     margin-block-start: var(--spacing-1);
     transition: var(--transition-1);
 
     &:is(:hover, :focus-visible) {
-      color: var(--color-primary-200);
+      color: var(--blue-300);
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     .footer {
       &__top {
         grid-template-columns: 1fr 1fr;
@@ -101,7 +112,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $breakpoint-xl) {
     .footer {
       &__bottom {
         background-size: auto;
@@ -120,7 +131,6 @@
       }
 
       &__logo {
-        -webkit-margin-after: 0;
         margin-block-end: 0;
       }
 

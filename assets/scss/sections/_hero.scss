@@ -1,8 +1,9 @@
 .hero {
+  @include section;
   --section-padding: 200px;
-  background-color: var(--color-primary-600);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  background: url("/assets/images/hero-bg.png") var(--blue-500) no-repeat center
+    center/cover;
 
   &-banner {
     display: none;
@@ -10,10 +11,11 @@
 
   &__title {
     margin-block: var(--spacing-2) var(--spacing-3);
+    @include headline-lg;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .hero {
     &__title {
       line-height: 1.125;
@@ -27,12 +29,10 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $breakpoint-lg) {
   .hero {
     &-banner {
       display: block;
-      max-width: -webkit-max-content;
-      max-width: -moz-max-content;
       max-width: max-content;
     }
 

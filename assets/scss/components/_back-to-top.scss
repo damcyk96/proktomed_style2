@@ -1,5 +1,5 @@
 .back-top-btn {
-  background-color: var(--color-primary-200);
+  background-color: var(--blue-300);
   border-radius: var(--radius-circle);
   bottom: var(--spacing-4);
   color: var(--white);
@@ -12,7 +12,7 @@
   z-index: 3;
 
   &:is(:hover, :focus-visible) {
-    background-color: var(--color-primary-600);
+    background-color: var(--blue-500);
   }
 
   &.active {
