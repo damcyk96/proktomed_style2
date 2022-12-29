@@ -29,14 +29,14 @@
 
   <header class="header" data-header>
     <div class="container header__container">
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.webp" width="136" height="46" alt="Proktomed" style="background: white;" />
+      <a href="#">
+        <img class="header__container-logo" src="./assets/images/logo.webp" width="136" height="46" alt="Proktomed" />
       </a>
 
       <nav class="navbar" data-navbar>
         <div class="navbar__top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.webp" width="136" height="46" alt="Proktomed" />
+          <a href="#">
+            <img class="navbar__top-logo" src="./assets/images/logo.webp" width="136" height="46" alt="Proktomed" />
           </a>
 
           <button class="navbar__close-btn" aria-label="clsoe menu" data-nav-toggler>
@@ -46,27 +46,27 @@
 
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link title-md">Główna</a>
+            <a href="#" class="navbar__link">Główna</a>
           </li>
 
           <li class="navbar__item">
-            <a href="#" class="navbar__link title-md">Schorzenia</a>
+            <a href="#" class="navbar__link">Schorzenia</a>
           </li>
 
           <li class="navbar__item">
-            <a href="#" class="navbar__link title-md">Dla pacjentów</a>
+            <a href="#" class="navbar__link">Dla pacjentów</a>
           </li>
 
           <li class="navbar__item">
-            <a href="#" class="navbar__link title-md">Hemoron DGHAL</a>
+            <a href="#" class="navbar__link">Hemoron DGHAL</a>
           </li>
 
           <li class="navbar__item">
-            <a href="#" class="navbar__link title-md">Zalecenia po wizycie</a>
+            <a href="#" class="navbar__link">Zalecenia po wizycie</a>
           </li>
 
           <li class="navbar__item">
-            <a href="#" class="navbar__link title-md">Kontakt</a>
+            <a href="#" class="navbar__link">Kontakt</a>
           </li>
         </ul>
 
@@ -98,10 +98,10 @@
   </header>
 
   <main>
-    <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+    <section class="hero" aria-label="home">
       <div class="container">
         <div class="hero-content">
-          <h1 class="headline-lg hero__title" data-reveal="left">
+          <h1 class="hero__title" data-reveal="left">
             specjalista chirurg<br />
             dr n. med. Marcin Nowak
           </h1>
@@ -123,7 +123,7 @@
                 <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
-              <h3 class="headline-sm card-title">
+              <h3 class="service-list__card-title">
                 <a href="#">Kolonoskopia</a>
               </h3>
 
@@ -143,7 +143,7 @@
                 <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
-              <h3 class="headline-sm card-title">
+              <h3 class="service-list__card-title">
                 <a href="#">Anoskopia</a>
               </h3>
 
@@ -163,7 +163,7 @@
                 <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
-              <h3 class="headline-sm card-title">
+              <h3 class="service-list__card-title">
                 <a href="#">Lorem ipsum</a>
               </h3>
 
@@ -183,7 +183,7 @@
                 <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
-              <h3 class="headline-sm card-title">
+              <h3 class="service-list__card-title">
                 <a href="#">Leczenie operacyjne</a>
               </h3>
 
@@ -203,11 +203,11 @@
     <section class="about" aria-labelledby="about-label">
       <div class="about__container container">
         <div class="about__content">
-          <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">
+          <p class="about__subtitle" id="about-label" data-reveal="left">
             O mnie
           </p>
 
-          <h2 class="headline-md" data-reveal="left">
+          <h2 class="about__title" data-reveal="left">
             Doswiadczenie zawodowe
           </h2>
 
@@ -230,7 +230,7 @@
             </li>
           </ul>
 
-          <p class="tab-text" data-reveal="left">
+          <p data-reveal="left">
             Aliquam faucibus, odio nec commodo aliquam, neque felis placerat
             dui, a porta ante lectus dapibus est. Aliquam a bibendum mi, sed
             condimentum
@@ -241,25 +241,25 @@
               <li class="about__item" data-reveal="left">
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                <span class="span">Sonsectetur adipisicing elit</span>
+                <span>Sonsectetur adipisicing elit</span>
               </li>
 
               <li class="about__item" data-reveal="left">
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                <span class="span">Exercitation ullamco laboris</span>
+                <span>Exercitation ullamco laboris</span>
               </li>
 
               <li class="about__item" data-reveal="left">
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                <span class="span">Eiusmod tempor incididunt</span>
+                <span>Eiusmod tempor incididunt</span>
               </li>
 
               <li class="about__item" data-reveal="left">
                 <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                <span class="span">Aolore magna aliqua</span>
+                <span>Aolore magna aliqua</span>
               </li>
             </ul>
           </div>
@@ -276,99 +276,96 @@
       </div>
     </section>
 
-    <section class="section listing" aria-labelledby="listing-label">
+    <section class="listing" aria-labelledby="listing-label">
       <div class="container">
         <ul class="grid-list">
           <li>
-            <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">
+            <p class="title-lg" id="listing-label" data-reveal="left">
               Schorzenia
             </p>
 
-            <h2 class="headline-md" data-reveal="left">
+            <h2 class="listing__title" data-reveal="left">
               Przed przyjściem
             </h2>
           </li>
 
           <li>
             <div class="listing__card" data-reveal="bottom">
-              <div class="card-icon">
+              <div>
                 <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
               <div>
-                <h3 class="headline-sm card-title">Kolonoskopia</h3>
-
-                <p class="card-text">Lorem ipsum</p>
+                <h3 class="listing__card-title">Kolonoskopia</h3>
+                <p>Lorem ipsum</p>
               </div>
             </div>
           </li>
 
           <li>
             <div class="listing__card" data-reveal="bottom">
-              <div class="card-icon">
+              <div>
                 <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
               <div>
-                <h3 class="headline-sm card-title">Anoskopia</h3>
+                <h3 class="listing__card-title">Anoskopia</h3>
 
-                <p class="card-text">Lorem ipsum</p>
+                <p>Lorem ipsum</p>
               </div>
             </div>
           </li>
 
           <li>
             <div class="listing__card" data-reveal="bottom">
-              <div class="card-icon">
+              <div>
                 <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
               <div>
-                <h3 class="headline-sm card-title">Hemoroidy</h3>
+                <h3 class="listing__card-title">Hemoroidy</h3>
 
-                <p class="card-text">Test testowy</p>
+                <p>Test testowy</p>
               </div>
             </div>
           </li>
 
           <li>
             <div class="listing__card" data-reveal="bottom">
-              <div class="card-icon">
+              <div>
                 <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
               <div>
-                <h3 class="headline-sm card-title">Anoskopia</h3>
-
-                <p class="card-text">Loreme telerem</p>
+                <h3 class="listing__card-title">Anoskopia</h3>
+                <p>Loreme telerem</p>
               </div>
             </div>
           </li>
 
           <li>
             <div class="listing__card" data-reveal="bottom">
-              <div class="card-icon">
+              <div>
                 <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
               <div>
-                <h3 class="headline-sm card-title">Gastroskopia</h3>
+                <h3 class="listing__card-title">Gastroskopia</h3>
 
-                <p class="card-text">Possat weasgaw</p>
+                <p>Possat weasgaw</p>
               </div>
             </div>
           </li>
 
           <li>
             <div class="listing__card" data-reveal="bottom">
-              <div class="card-icon">
+              <div>
                 <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon" />
               </div>
 
               <div>
-                <h3 class="headline-sm card-title">Wizyty domowe</h3>
-
-                <p class="card-text">Lorem ipsum</p>
+                <h3 class="listing__card-title">Wizyty domowe</h3>
+                <p>Lorem ipsum</p>
               </div>
             </div>
           </li>
@@ -376,73 +373,52 @@
       </div>
     </section>
 
-    <section class="section blog" aria-labelledby="blog-label">
+    <section class="blog" aria-labelledby="blog-label">
       <div class="container">
-
-
-        <h2 class="blog__section-title headline-md text-center" data-reveal="bottom">
+        <h2 class="blog__section-title" data-reveal="bottom">
           Ostatnie wpisy na blogu
         </h2>
-
         <ul class="grid-list">
           <li>
-            <div class="blog__card has-before has-after" data-reveal="bottom">
-
-
-              <h3 class="headline-sm card-title">
+            <div class="blog__card" data-reveal="bottom">
+              <h3 class="blog__card-title">
                 Schorzenia hemoroidalne - jak je leczyć?
               </h3>
-
-              <time class="title-sm blog__card-date" datetime="2022-12-20">20 Grudzień, 2022</time>
-
-              <p class="card-text">
+              <time class="blog__card-date" datetime="2022-12-20">20 Grudzień, 2022</time>
+              <p class="blog__card-text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat
               </p>
-
-              <a href="#" class="blog__card-btn-text title-lg">Read More</a>
+              <a href="#" class="blog__card-btn-text">Read More</a>
             </div>
           </li>
-
           <li>
-            <div class="blog__card has-before has-after" data-reveal="bottom">
-
-
-              <h3 class="headline-sm card-title">
+            <div class="blog__card" data-reveal="bottom">
+              <h3 class="blog__card-title">
                 Zasady prawidłowego odżywiania
               </h3>
-
-              <time class="title-sm blog__card-date" datetime="2022-01-28">28 January, 2022</time>
-
-              <p class="card-text">
+              <time class="blog__card-date" datetime="2022-01-28">28 January, 2022</time>
+              <p class="blog__card-text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat
               </p>
-
-              <a href="#" class="blog__card-btn-text title-lg">Read More</a>
+              <a href="#" class="blog__card-btn-text">Read More</a>
             </div>
           </li>
-
           <li>
-            <div class="blog__card has-before has-after" data-reveal="bottom">
-
-
-              <h3 class="headline-sm card-title">
+            <div class="blog__card" data-reveal="bottom">
+              <h3 class="blog__card-title">
                 Jakie są przyczyny chorób hemoroidalnych?
-
               </h3>
-
-              <time class="title-sm blog__card-date" datetime="2022-12-20">20 Grudzień, 2022</time>
-
-              <p class="card-text">
+              <time class="blog__card-date" datetime="2022-12-20">20 Grudzień, 2022</time>
+              <p class="blog__card-text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat
               </p>
-
-              <a href="#" class="blog__card-btn-text title-lg">Read More</a>
+              <a href="#" class="blog__card-btn-text">Read More</a>
             </div>
           </li>
         </ul>
@@ -450,20 +426,17 @@
     </section>
   </main>
 
-  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer">
     <div class="container">
-      <div class="section footer__top">
+      <div class="footer__top">
         <div class="footer__top-brand" data-reveal="bottom">
           <a href="#" class="logo">
             <img src="./assets/images/logo.webp" width="136" height="46" loading="lazy" alt="Proktomed home" />
           </a>
 
-          <ul class="footer__contact-list has-after">
+          <ul class="footer__contact-list">
             <li class="footer__contact-item">
-              <div class="footer__contact-item-icon">
-                <ion-icon name="mail-open-outline"></ion-icon>
-              </div>
-
+              <ion-icon class="footer__contact-item-icon" name="mail-open-outline"></ion-icon>
               <div>
                 <p>
                   Email :
@@ -478,10 +451,7 @@
             </li>
 
             <li class="footer__contact-item">
-              <div class="footer__contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-
+              <ion-icon class="footer__contact-item-icon" name="call-outline"></ion-icon>
               <div>
                 <p>
                   Telefon kontaktowy:
@@ -498,7 +468,7 @@
         </div>
 
         <div class="footer__list" data-reveal="bottom">
-          <p class="headline-sm footer__list-title">About Us</p>
+          <p class="footer__list-title">About Us</p>
 
           <p class="text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -516,23 +486,23 @@
 
         <ul class="footer__list" data-reveal="bottom">
           <li>
-            <p class="headline-sm footer__list-title">Schorzenia</p>
+            <p class="footer__list-title">Schorzenia</p>
           </li>
 
           <li>
-            <a href="#" class="text footer__link">Lorem ipsum</a>
+            <a href="#" class="footer__link">Lorem ipsum</a>
           </li>
 
           <li>
-            <a href="#" class="text footer__link">Lorem ipsum</a>
+            <a href="#" class="footer__link">Lorem ipsum</a>
           </li>
 
           <li>
-            <a href="#" class="text footer__link">Lorem ipsum</a>
+            <a href="#" class="footer__link">Lorem ipsum</a>
           </li>
 
           <li>
-            <a href="#" class="text footer__link">Lorem ipsum</a>
+            <a href="#" class="footer__link">Lorem ipsum</a>
           </li>
 
 
@@ -540,17 +510,17 @@
 
         <ul class="footer__list" data-reveal="bottom">
           <li>
-            <p class="headline-sm footer__list-title">Przydatne linki</p>
+            <p class="footer__list-title">Przydatne linki</p>
           </li>
 
           <li>
-            <a href="#" class="text footer__link">Kontakt</a>
+            <a href="#" class="footer__link">Kontakt</a>
           </li>
           <li>
-            <a href="#" class="text footer__link">Kontakt</a>
+            <a href="#" class="footer__link">Kontakt</a>
           </li>
           <li>
-            <a href="#" class="text footer__link">Kontakt</a>
+            <a href="#" class="footer__link">Kontakt</a>
           </li>
 
 
@@ -558,7 +528,7 @@
       </div>
 
       <div class="footer__bottom">
-        <p class="text copyright">
+        <p>
           &copy; Proktomed 2022
         </p>
 

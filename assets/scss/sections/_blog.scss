@@ -1,15 +1,16 @@
 .blog {
+  @include section;
   background-image: linear-gradient(
     to bottom,
     var(--color-neutral-200) 60%,
     var(--white) 60%
   );
-  -webkit-padding-before: 0;
   padding-block-start: 0;
 
   &__section-title {
-    -webkit-margin-after: var(--spacing-8);
+    @include headline-md;
     margin-block-end: var(--spacing-8);
+    text-align: center;
   }
 
   &__card {
@@ -24,9 +25,15 @@
 
     &::before,
     &::after {
+      content: "";
       inset: 0;
       z-index: -1;
       transition: var(--transition-3);
+      position: absolute;
+
+      &:is(&-text, &-btn-text, &-date) {
+        transition: var(--transition-2);
+      }
     }
 
     &::before {
@@ -42,38 +49,39 @@
       transform: translateY(100%);
     }
 
+    &-title {
+      @include headline-sm;
+    }
+
     &-date {
-      color: var(--color-secondary-400);
+      color: var(--blue-600);
       font-weight: var(--fw-700);
       text-transform: uppercase;
       opacity: 0.5;
       margin-block: var(--spacing-2);
+      @include title-sm;
     }
 
     &-btn-text {
-      color: var(--color-primary-200);
-      -webkit-margin-before: var(--spacing-2);
+      color: var(--blue-300);
       margin-block-start: var(--spacing-2);
+      @include title-lg;
     }
 
-    :is(.card-meta, .card-title, .date, .card-text, .btn-text) {
-      transition: var(--transition-2);
-    }
-
-    &:is(:hover, :focus-within)
-      :is(.card-meta, .card-title, .date, .card-text, .btn-text) {
+    &:is(:hover, :focus-within) :is(&-title, &-date, &-text) {
       color: var(--white);
+      transition: var(--transition-2);
     }
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $breakpoint-lg) {
   .blog .grid-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakpoint-xl) {
   .blog .grid-list {
     grid-template-columns: repeat(3, 1fr);
   }

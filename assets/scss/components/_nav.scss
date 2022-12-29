@@ -1,7 +1,7 @@
 .navbar {
   right: -300px;
   max-width: 300px;
-  background-color: var(--color-primary-600);
+  background-color: var(--blue-500);
   z-index: 3;
   transition: 0.25s var(--cubic-in);
   visibility: hidden;
@@ -29,6 +29,11 @@
     position: relative;
     padding-inline: var(--spacing-3);
     padding-block: var(--spacing-7) var(--spacing--13);
+
+    &-logo {
+      margin: var(--spacing-1);
+      background-color: var(--white);
+    }
   }
 
   &__close-btn {
@@ -40,18 +45,16 @@
   }
 
   &__list {
-    -webkit-margin-after: var(--spacing-4);
     margin-block-end: var(--spacing-4);
-    -webkit-border-after: 1px solid var(--white_a10);
-    border-block-end: 1px solid var(--white_a10);
+    border-block-end: 1px solid var(--brown-500);
   }
 
   &__item {
-    -webkit-border-before: 1px solid var(--white_a10);
-    border-block-start: 1px solid var(--white_a10);
+    border-block-start: 1px solid var(--brown-500);
   }
 
   &__link {
+    @include title-md;
     color: var(--white);
     text-transform: uppercase;
     padding: var(--spacing-1) var(--spacing-3);
@@ -79,15 +82,13 @@
     visibility: visible;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     &__open-btn {
-      -webkit-margin-start: auto;
       margin-inline-start: auto;
     }
   }
 
-  @media (min-width: 1200px) {
-    -webkit-margin-start: auto;
+  @media (min-width: $breakpoint-xl) {
     margin-inline-start: auto;
 
     &__open-btn,
@@ -110,7 +111,6 @@
     }
 
     &__item {
-      -webkit-border-before: none;
       border-block-start: none;
     }
 
